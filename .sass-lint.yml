@@ -1,0 +1,47 @@
+files:
+  include: "src/**/*.scss"
+  ignore:
+rules:
+  border-zero: 1
+  class-name-format: 0
+  empty-line-between-blocks: 1
+  final-newline: 1
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+  indentation:
+    - 1
+    - size: 2
+  leading-zero: 0
+  mixins-before-declarations:
+    - 1
+    - exclude: ["cell-respond-to"]
+  no-color-keywords: 1
+  no-color-literals: 0
+  no-css-comments: 0
+  no-duplicate-properties: 1
+  no-extends: 1
+  no-misspelled-properties:
+    - 1
+    - "extra-properties":
+        - "overflow-scrolling"
+        - "flex-preferred-size"
+        - "small"
+        - "medium"
+        - "large"
+        - "xlarge"
+  no-trailing-whitespace: 1
+  no-transition-all: 0
+  no-vendor-prefixes: 0
+  property-sort-order: 0
+  quotes:
+    - 1
+    - "style": "double"
+  shorthand-values: 0
+  single-line-per-selector: 0
+  space-after-colon: 1
+  space-after-comma: 1
+  zero-unit: 1
+  no-ids: 0
+  nesting-depth:
+    - 1
+    - max-depth: 3
