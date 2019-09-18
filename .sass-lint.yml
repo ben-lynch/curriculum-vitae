@@ -14,7 +14,7 @@ rules:
   leading-zero: 0
   mixins-before-declarations:
     - 1
-    - exclude: ["cell-respond-to"]
+    - exclude: ["breakpoint"]
   no-color-keywords: 1
   no-color-literals: 0
   no-css-comments: 0
@@ -23,12 +23,10 @@ rules:
   no-misspelled-properties:
     - 1
     - "extra-properties":
-        - "overflow-scrolling"
-        - "flex-preferred-size"
-        - "small"
-        - "medium"
-        - "large"
-        - "xlarge"
+        - "mobile"
+        - "tablet"
+        - "desktop"
+        - "large-desktop"
   no-trailing-whitespace: 1
   no-transition-all: 0
   no-vendor-prefixes: 0

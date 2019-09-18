@@ -1,0 +1,38 @@
+@import "./reset.scss";
+
+$dark-purple: #421c52;
+$sharp-purple: #732c7b;
+$light-purple: #9c8aa5;
+$hint-purple: #bdaec6;
+$white: #fff;
+$black: #010101;
+
+$break-mobile: 480px;
+$break-tablet: 768px;
+$break-desktop: 1024px;
+$break-large-dektop: 1270px;
+@mixin breakpoint($size) {
+  @if $size == mobile {
+    @media only screen and (max-width: $break-mobile - 1) { @content; }
+  } @else if $size == mobile {
+    @media only screen and (min-width: $break-mobile) and (max-width: $break-tablet - 1) { @content; }
+  } @else if $size == tablet {
+    @media only screen and (min-width: $break-tablet) and (max-width: $break-desktop - 1) { @content; }
+  } @else if $size == desktop {
+    @media only screen and (min-width: $break-desktop) and (max-width: $break-large-dektop - 1) { @content; }
+  } @else if $size == large-dekstop {
+    @media only screen and (min-width: $break-large-dektop) { @content; }
+  } @else if $size == mobile-up {
+    @media only screen and (min-width: $break-mobile) { @content; }
+  } @else if $size == tablet-up {
+    @media only screen and (min-width: $break-tablet) { @content; }
+  } @else if $size == desktop-up {
+    @media only screen and (min-width: $break-desktop) { @content; }
+  } @else if $size == mobile-down {
+    @media only screen and (max-width: $break-tablet - 1) { @content; }
+  } @else if $size == tablet-down {
+    @media only screen and (max-width: $break-desktop - 1) { @content; }
+  } @else if $size == desktop-down {
+    @media only screen and (max-width: $break-large-dektop - 1) { @content; }
+  }
+}
