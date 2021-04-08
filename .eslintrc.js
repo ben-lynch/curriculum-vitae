@@ -95,7 +95,7 @@ module.exports = {
       },
     },
     {
-      files: ['**/pages/**', 'src/global.d.ts'],
+      files: ['src/global.d.ts'],
       rules: {
         'import/no-default-export': 'off',
       },

@@ -6,12 +6,8 @@
     "noEmit": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -26,7 +22,5 @@
       "name": "typescript-tslint-plugin"
     }
   ],
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
