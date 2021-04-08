@@ -1,4 +1,5 @@
-import React, { FunctionComponent } from 'react'
+import { FunctionComponent } from 'react'
+
 import { Typography } from './components'
 
 export const App: FunctionComponent = () => (
